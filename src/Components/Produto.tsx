@@ -4,29 +4,31 @@ import Link from "next/link"
 export default function Produtos(){
     return(
         <main>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mx-auto max-w-6xl mb-16 mt-10">
+            <div className="mx-auto max-w-6xl mb-16 mt-10 grid grid-cols-1 lg:grid-cols-3">
                 <div>
                     <div className="flex items-center justify-center">
-                        <Link href={'/produtos/pepsi-zero-acucar'}>
+                        <Link href={'/Produtos/pepsi-zero-acucar'}>
                             <Image 
                                 src="/assets/PEP-ZERO.png"
                                 alt="zero"
                                 width={230} height={200}
-                                className="hover:scale-100 duration-200"
+                                className="duration-200 hover:scale-110"
                             />
                         </Link>
                     </div>
 
                     <div className="text-center p-8">
-                        <Link href={'/Produtos/pepsi-zero-acucar'} className="font-mono font font-bold text-4xl hover:underline hover:decoretion-[#fff]">
-                            PEPSI <br /> ZERO AÇÚCAR<sup>®</sup>
+                        <Link href={'/Produtos/pepsi-zero-acucar'} className="font-mono font-bold font text-4xl hover:underline hover:decoration-white">
+                                PEPSI <br /> ZERO AÇÚCAR <sup>®</sup>
                         </Link>
                     </div>
-                    <p className="text-sm p-6 text-center">MÁXIMO SABOR, ZERO AÇÚCAR</p>
+                    <p className="text-sm p-6 text-center">MÁXIMO SABOR, ZERO ACÚCAR</p>
 
-                    <div className="text-center">
-                        <Link className="font bg-[#0025ff] font-bold text-center p-3 w-80 rounded-lg text-lg" href={'/Produtos/pepsi-zero-acucar'}>INFO PRODUTO</Link>
-                    </div>
+                  <div className="text-center">
+                        <Link href={'/Produtos/pepsi-zero-acucar'} className="font font-bold w-80 p-3 text-center bg-[#0025ff] rounded-lg text-lg">
+                            INFO PRODUTO
+                        </Link>
+                  </div>
                 </div>
 
                 <div className="sm:p-12 lg:p-0">
@@ -36,7 +38,7 @@ export default function Produtos(){
                                 src="/assets/PEP-LIMA.png"
                                 width={230} height={200}
                                 alt="LIMA"
-                                className="hover:scale-100 duration-200"
+                                className="duration-200 hover:scale-110"
                             />
                        </Link>
                     </div>
@@ -47,8 +49,11 @@ export default function Produtos(){
                         </Link>
                     </div>
                     <p className="text-sm pb-6 text-center">MÁXIMO SABOR,  ZERO A AÇÚCAR COM UM REFRESCANTE TOQUE DE LIMA</p>
-                    <div className="text-center">
-                        <Link className="font bg-[#0025ff] font-bold text-center p-3 w-80 rounded-lg text-lg" href={'/Produtos/pepsi-zero-acucar-lima'}>INFO PRODUTO</Link>
+                    
+                    <div>
+                        <Link href={'/Produtos/pepsi-zero-lima'} className="bg-[#0025ff] font font-bold text-center text-lg w-80 p-3 rouded-lg">
+                            INFO PRODUTOS
+                        </Link>
                     </div>
                 </div>
                 
@@ -59,7 +64,7 @@ export default function Produtos(){
                                 src="/assets/PEP-REGULAR-.png"
                                 width={230} height={200}
                                 alt="pepsi"
-                                className="hover:scale-100 duration-200"
+                                className="duration-200 hover:scale-110"
                             />
                         </Link>
                     </div>
@@ -72,7 +77,9 @@ export default function Produtos(){
                     <p className="text-sm pt-9 pb-12 text-center">SABOR ORIGINAL</p>
 
                     <div className="text-center">
-                        <Link className="font bg-[#0025ff] font-bold text-center p-3 w-80 rounded-lg text-lg" href={'/Produtos/pepsi'}>INFO PRODUTO</Link>
+                        <Link href={'/Produtos/pepsi'} className="rouded-lg text-lg bg=[#0025ff] text-center font font-bold">
+                            INFO PRODUTOS
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -81,10 +88,10 @@ export default function Produtos(){
                 <div className="flex items-center justify-center">
                     <Link href={'/Produtos/pepsi-zero-cafeina'}>
                         <Image
-                            src="/assets/ZERO.png"
+                            src="/assets/zero.png"
                             alt="ZERO"
                             width={230} height={200}
-                            className="hover:scale-100 duration-200"
+                            className="duration-200 hover:scale-110"
                         />
                     </Link>
                 </div>
@@ -97,7 +104,9 @@ export default function Produtos(){
                 <p className="text-sm pt-9 pb-12 text-center">MÁXIMO SABOR, ZARO AÇÚCAR ZERO CAFEÍNA<sup>®</sup></p>
 
                 <div className="text-center">
-                    <Link className="font bg-[#0025ff] font-bold text-center p-3 w-80 rounded-lg text-lg" href={'/Produtos/pepsi-zero-cafeina'}>INFO PRODUTO</Link>
+                    <Link href={'/Produtos/pepsi-zero-cafeina'} className="rounded-lg text-lg text-center bg-[#0025ff] font-bold font">
+                        INFO PRODUTOS
+                    </Link>
                 </div>
             </div>
         </main>

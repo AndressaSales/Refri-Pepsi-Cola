@@ -18,7 +18,7 @@ export default function PepsiZeroCafeina(){
             <div className="lg:flex lg:float-ledt grid grid-col-1 gap-7 mx-auto p-2 max-w-5xl mb-16 mt-10">
                 <div className="flex items-center justify-center">
                     <Image 
-                        src="/assets/ZERO.png"
+                        src="/assets/zero.png"
                         alt="Zero"
                         width={400} height={300}
                         className="lg:w-[900px]"

@@ -12,7 +12,7 @@ export default function Navbar(){
 
     return(
         <main>
-            <div className="navbar flex flex-wrap py-7 justify-between items-center text-[#ffff] border-2 border-[#fff] border-t-transparent border-l-transparent border-r-transparent">
+            <div className="navbar flex py-7">
                 <div className="flex items-center justify-center  flex-shrink-0 pl-6">
                     <Link href={'/'}>
                         <Image 
@@ -25,38 +25,49 @@ export default function Navbar(){
                     </Link>
                 </div>
 
-                <div className="block lg:hidden">
-                    <button onClick={toogleMenu} className="bg-[#0025ff] p-2 rounded-full mr-6">
-                        {menu ? (
-                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-8">
-                           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                         </svg>
-                        ): (
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-8">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                        )}
+                <div className="lg:hidden block">
+                    <button onClick={toogleMenu} className="rounded-full p-2 btn">
+                        {
+                            menu ? (
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            ) : (
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+
+                            )
+                        }
                     </button>
                 </div>
 
-                <div className="sm:hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div className="block sm:hidden lg:items-center lg:flex flex-grow lg:w-auto  w-full">
                     <div className="text-center flex lg:flex-row">
-                        <Link href={'/Produtos'} className="hover:text-[#0025ff] lg:ml-80 lg:mr-32 pt-4">PRODUTOS</Link>
-                        <Link href={'/Passatempo'} className="hover:text-[#0025ff] lg:mr-32 lg:pt-4">PASSATEMPO</Link>
-                        <Link href={'/Contatos'} className="hover:text-[#0025ff] lg:pt-4">CONTATOS</Link>
+                        <Link href={'/Produtos'} className="ho pt-4 font text-2xl lg:ml-80 lg:mr-32">PRODUTOS</Link>
+                        <Link href={'/Passatempo'} className="ho lg:pt-4 text-2xl lg:mr-32 font">PASSATEMPO</Link>
+                        <Link href={'/Contatos'} className="ho lg:pt-4 text-2xl font">CONTATOS</Link>
                     </div>
 
                 </div>
             </div>
-            {menu && (
-                <div className="lg:hidden w-full block flex-row">
-                    <div className="text-center flex flex-col bg-[0,0,0,.9]">
-                        <Link href={'/Produtos'} className="hover:text-[#0025ff] text-2xl sm:p-4">PRODUTOS</Link>
-                        <Link href={'/Passatempo'} className="hover:text-[#0025ff] text-2xl sm:pb-4">PASSATEMPO</Link>
-                        <Link href={'/Contatos'} className="hover:text-[#0025ff] text-2xl">CONTATOS</Link>
+            {
+                menu && (
+                    <div className="block flex-row lg:hidden">
+                       <div className="flex-col text-center flex">
+                            <Link href={'/Produtos'} className="ho font sm:p-4 text-2xl">
+                                PRODUTOS
+                            </Link>
+                            <Link href={'/Passatempo'} className="ho sm:pb-4 font text-2xl">
+                                PASSATEMPO
+                            </Link>
+                            <Link href={'/Contatos'} className="text-2xl font ho">
+                                CONTATOS
+                            </Link>
+                       </div>
                     </div>
-                </div>
-            )}
+                )
+            }
         </main>
     )
 }
