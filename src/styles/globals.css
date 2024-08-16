@@ -13,7 +13,6 @@ body{
 }
 .navbar{
     background-color: rgba(0,0,0,.9);
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     border: 2px solid;
@@ -95,15 +94,28 @@ sup{
 .btn{
     background-color: #0025ff;
     margin-right: 13px;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.n1{
+
 }
 
 .ho:hover{
     color: #0025ff;
 }
+
 .refri{
     z-index: 2;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.link{
+    display: block;
+    width: 100%;
+    align-items: center;
 }

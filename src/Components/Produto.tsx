@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function Produtos(){
     return(
         <main>
-            <div className="mx-auto max-w-6xl mb-16 mt-10 grid grid-cols-1 lg:grid-cols-3">
+            <div className="mx-auto max-w-6xl mb-16 mt-10 grid sm:grid-cols-1 grid-cols-3">
                 <div>
                     <div className="flex items-center justify-center">
                         <Link href={'/Produtos/pepsi-zero-acucar'}>
@@ -50,7 +50,7 @@ export default function Produtos(){
                     </div>
                     <p className="text-sm pb-6 text-center">MÁXIMO SABOR,  ZERO A AÇÚCAR COM UM REFRESCANTE TOQUE DE LIMA</p>
                     
-                    <div>
+                    <div className="text-center">
                         <Link href={'/Produtos/pepsi-zero-lima'} className="bg-[#0025ff] font font-bold text-center text-lg w-80 p-3 rouded-lg">
                             INFO PRODUTOS
                         </Link>
