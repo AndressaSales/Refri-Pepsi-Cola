@@ -98,9 +98,6 @@ sup{
     border-radius: 50%;
 }
 
-.n1{
-
-}
 
 .ho:hover{
     color: #0025ff;
@@ -112,10 +109,4 @@ sup{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-
-.link{
-    display: block;
-    width: 100%;
-    align-items: center;
 }
