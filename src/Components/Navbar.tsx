@@ -48,14 +48,14 @@ export default function Navbar(){
                 </div>
 
                 <div className="lg:items-center lg:flex flex-grow w-full lg:w-auto block sm:hidden">
-                    <div className="lg:flex-grow text-center">
-                            <Link className="text-2xl lg:mr-32 pt-4 ho" href={'/Produtos'}>
+                    <div className="link1">
+                            <Link className="text-2xl ho l1" href={'/Produtos'}>
                                 PRODUTOS
                             </Link>
-                            <Link className="lg:pt-4 text-2xl lg:mr-32 ho" href={'/Passatempo'}>
+                            <Link className="ho text-2xl l2" href={'/Passatempo'}>
                                 PASSATEMPO
                             </Link>
-                            <Link className="lg:pt-4 text-2xl ho" href={'/Contatos'}>
+                            <Link className="ho text-2xl l3" href={'/Contatos'}>
                                 CONTATOS
                             </Link>
                     </div>

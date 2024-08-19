@@ -110,3 +110,29 @@ sup{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+.link1{
+    align-items: center;  
+    width: 100%;
+    flex-grow: 1;
+    display: block;
+}
+.l1{
+    margin-left: 20rem;
+}
+.l2{
+    margin-left: 10rem;
+}
+.l3{
+    margin-left: 10rem;
+}
+
+
+@media  only screen and (max-widht: 600px) {
+    .title{
+       font-size: 9rem;
+    }
+    .link1{
+        display: none;
+    }
+}
