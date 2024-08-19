@@ -47,7 +47,7 @@ export default function Navbar(){
                     </button>
                 </div>
 
-                <div className="lg:items-center lg:flex flex-grow w-full lg:w-auto block sm:hidden">
+                <div className="lg:items-center lg:flex flex-grow w-full lg:w-auto block link1">
                     <div className="link1">
                             <Link className="text-2xl ho l1" href={'/Produtos'}>
                                 PRODUTOS
@@ -63,8 +63,8 @@ export default function Navbar(){
             </nav>
             {
                 btnMenu && (
-                    <div className="flex-grow lg:hidden text-center block">
-                        <div className="grid grid-cols-1 text-center flex">
+                    <div className="flex-grow text-center block link2">
+                        <div className="link2">
                             <Link className="sm:p-4 text-2xl ho" href={'/Produtos'}>
                                 PRODUTOS
                             </Link>

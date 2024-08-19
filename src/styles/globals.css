@@ -128,11 +128,20 @@ sup{
 }
 
 
+.link2{
+    display: none;
+}
+
 @media  only screen and (max-widht: 600px) {
     .title{
        font-size: 9rem;
     }
     .link1{
         display: none;
+    }
+    .link2{
+        flex-direction: column;
+        display: flex;
+        text-align: center;
     }
 }
